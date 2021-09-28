@@ -1,1 +1,3 @@
-const something = 
+const something =
+const
+const
