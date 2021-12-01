@@ -5,6 +5,6 @@ const startBtn = document.querySelector('btn__reset');
 const overlay = document.querySelector('#overlay');
 
 
-btn__reset.addEventListener('click', () => {
+startBtn.addEventListener('click', () => {
   overlay.style.display = hide;
 });
