@@ -161,8 +161,3 @@ button {
 .lose a {
   color: var(--color-lose);
 }
-
-
-#qwerty {
-  border: 2px solid red;
-}
