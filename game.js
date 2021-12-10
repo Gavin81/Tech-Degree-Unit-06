@@ -6,5 +6,5 @@ const overlay = document.querySelector('#overlay');
 
 
 startBtn.addEventListener('click', () => {
-  document.getElementById('#overlay').style.display = "none";
+  document.getElementById('overlay').style.display = "none";
 });
