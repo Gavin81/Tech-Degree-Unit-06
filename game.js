@@ -11,13 +11,22 @@ startBtn.addEventListener('click', () => {
 });
 
 
-getRandomPhraseAsArray (arr) {
+getRandomPhraseAsArray ( arr ) => {
 
 }
 
-getRandomPhraseAsArray(phrases);
+
+//getRandomPhraseAsArray(phrases);
 
 
-addPhraseToDisplay (arr) {
+addPhraseToDisplay (arr) => {
+
+}
+
+const checkLetter (button) => {
+
+}
+
+const checkWin () => {
 
 }
