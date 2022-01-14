@@ -11,22 +11,33 @@ startBtn.addEventListener('click', () => {
 });
 
 
-getRandomPhraseAsArray ( arr ) => {
+const getRandomPhraseAsArray( arr ) => {
+  let whichOne = ;
+}
+
+getRandomPhraseAsArray(phrases);
+
+
+
+
+
+const addPhraseToDisplay (arr) => {
 
 }
 
 
-//getRandomPhraseAsArray(phrases);
-
-
-addPhraseToDisplay (arr) => {
-
-}
 
 const checkLetter (button) => {
 
 }
 
+
+
 const checkWin () => {
+
+}
+
+
+qwerty.addEventListener('click', (e) => ){
 
 }
