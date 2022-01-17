@@ -21,7 +21,7 @@ const getRandomPhraseAsArray( arr ) => {
   // let whichOne = ;
 }
 
-getRandomPhraseAsArray(phrases);
+//getRandomPhraseAsArray(phrases);
 
 
 
