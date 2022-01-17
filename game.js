@@ -17,7 +17,8 @@ startBtn.addEventListener('click', () => {
 // Using the random number to return an item from the phrases array instead of just
 // the random number.
 const getRandomPhraseAsArray( arr ) => {
-  let whichOne = ;
+  const whichOne = Math.random(phrases);
+  // let whichOne = ;
 }
 
 getRandomPhraseAsArray(phrases);
