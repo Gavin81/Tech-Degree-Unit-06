@@ -17,34 +17,31 @@ startBtn.addEventListener('click', () => {
 // Using the random number to return an item from the phrases array instead of just
 // the random number.
 
-const getRandomPhraseAsArray(arr) => {
+const getRandomPhraseAsArray = (arr) => {
   const whichOne = Math.floor(Math.random() * arr.length);
 
 }
 
-//getRandomPhraseAsArray(phrases);
 
 
 
-
-
-const addPhraseToDisplay (arr) => {
+const addPhraseToDisplay = (arr) => {
 
 }
 
 
 
-const checkLetter (button) => {
+const checkLetter = (button) => {
 
 }
 
 
 
-const checkWin () => {
+const checkWin = () => {
 
 }
 
 
-qwerty.addEventListener('click', (e) => ){
+qwerty.addEventListener('click', () => {
 
-}
+});
