@@ -6,7 +6,7 @@ const startBtn = document.querySelector('.btn__reset');
 const overlay = document.querySelector('#overlay');
 
 
-startBtn.addEventListener('click', () => {
+startBtn.addEventListener('click', (e) => {
   document.getElementById('overlay').style.display = "none";
 });
 
@@ -18,7 +18,7 @@ startBtn.addEventListener('click', () => {
 // the random number.
 const getRandomPhraseAsArray(arr) => {
   const whichOne = Math.floor(Math.random() * arr.length);
-  
+
 }
 
 //getRandomPhraseAsArray(phrases);
