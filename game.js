@@ -18,8 +18,10 @@ startBtn.addEventListener('click', () => {
 // the random number.
 
 const getRandomPhraseAsArray = (arr) => {
+  // Produces a single random number based on the length of the array.
   const whichOne = Math.floor(Math.random() * arr.length);
-
+  // Chooses the single random phrase from the array using whichOne as an index position.
+  const thisOne = Math.random(arr / arr.length);
 }
 
 
