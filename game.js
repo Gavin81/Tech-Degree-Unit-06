@@ -11,6 +11,11 @@ startBtn.addEventListener('click', () => {
 });
 
 
+
+// Generate a random number and then use that random number as an index to grab
+// one of the phrases from the array.
+// Using the random number to return an item from the phrases array instead of just
+// the random number.
 const getRandomPhraseAsArray( arr ) => {
   let whichOne = ;
 }
