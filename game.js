@@ -33,7 +33,8 @@ console.log(getRandomPhraseAsArray(phrases));
 
 const addPhraseToDisplay = (arr) => {
   forEach ( let i = 0; i <= arr.length; i++ ) {
-
+    let
+    phrases.append(li);
   }
 }
 
