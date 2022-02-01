@@ -27,7 +27,7 @@ const getRandomPhraseAsArray = (arr) => {
   // Splits the phrase into an array of letters
   return thisOne.split('');
 }
-
+console.log(getRandomPhraseAsArray(phrases));
 
 
 
