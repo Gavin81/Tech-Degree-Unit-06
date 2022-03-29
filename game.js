@@ -1,5 +1,5 @@
 const qwerty = document.querySelector('#qwerty');
-const phrase = document.querySelector('#phrase');
+const phrase = document.querySelector('#phrase ul');
 const phrases = ['Reincarnation', 'Movies', 'Slapstick', 'Respect', 'Money', 'Time and effort'];
 let missed = 0;
 const startBtn = document.querySelector('.btn__reset');
@@ -27,18 +27,19 @@ startBtn.addEventListener('click', () => {
   // Splits the phrase into an array of letters
   return thisOne.split('');
 }
-console.log(getRandomPhraseAsArray(phrases));
+const randomPhrase = getRandomPhraseAsArray(phrases);
 
 
 
 const addPhraseToDisplay = (arr) => {
-  forEach ( let i = 0; i <= arr.length; i++ ) {
+  for ( let i = 0; i <= arr.length; i++ ) {
     const li = document.createElement('li');
-    li.textContent = ;
-    phrases.append(li);
+    li.textContent = arr[i];
+    phrase.append(li);
   }
 }
 
+addPhraseToDisplay(randomPhrase);
 
 
 const checkLetter = (button) => {
