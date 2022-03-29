@@ -17,7 +17,7 @@ startBtn.addEventListener('click', () => {
 // Using the random number to return an item from the phrases array instead of just
 // the random number.
 
-const getRandomPhraseAsArray = (arr) => {
+  const getRandomPhraseAsArray = (arr) => {
   // Produces a single random number based on the length of the array.
   const whichOne = Math.floor(Math.random() * arr.length);
 
@@ -33,7 +33,8 @@ console.log(getRandomPhraseAsArray(phrases));
 
 const addPhraseToDisplay = (arr) => {
   forEach ( let i = 0; i <= arr.length; i++ ) {
-    let
+    const li = document.createElement('li');
+    li.textContent = ;
     phrases.append(li);
   }
 }
