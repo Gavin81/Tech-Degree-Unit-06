@@ -57,8 +57,9 @@ const checkLetter = (button) => {
       match = li.textContent;
       //return match;
     }
+    return match;
   }
-  return match;
+  //return match;
 }
 
 
