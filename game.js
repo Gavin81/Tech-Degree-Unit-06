@@ -49,16 +49,17 @@ addPhraseToDisplay(randomPhrase);
 
 
 const checkLetter = (button) => {
-  let checkLetter = document.querySelector('li');
-  const match = null;
-  for ( let i = 0; i < arr.length; i++)  {
-    if (button.textContent = li.textContent){
-      li.append("show");
-      match.append(button.textContent);
+  let li = document.querySelector('.letter');
+  let match = null;
+  for ( let i = 0; i < li.length; i++)  {
+    if (button.textContent = li.textContent.toLowerCase()){
+      li.classList.add('show');
+      match = li.textContent;
 
-      return match;
+      //return match;
     }
   }
+  return match;
 }
 
 
