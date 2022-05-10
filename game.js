@@ -48,6 +48,7 @@ const addPhraseToDisplay = (arr) => {
 addPhraseToDisplay(randomPhrase);
 
 
+// Create checkLetter function
 const checkLetter = (button) => {
   let li = document.querySelector('.letter');
   let match = null;
@@ -67,6 +68,12 @@ const checkWin = () => {
 }
 
 
-qwerty.addEventListener('click', () => {
 
+// Add Event listener To Keyboard
+qwerty.addEventListener('click', (e) => {
+  if ( button || button('.chosen') ) {
+    checkLetter;
+    let letterFound = ;
+    let missed ++
+  }
 });
