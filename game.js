@@ -53,10 +53,10 @@ const checkLetter = (button) => {
   const match = null;
   for ( let i = 0; i < arr.length; i++)  {
     if (button.textContent = li.textContent){
-      li.show;
+      li.append("show");
       match.append(button.textContent);
-    } else {
 
+      return match;
     }
   }
 }
