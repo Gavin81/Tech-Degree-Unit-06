@@ -55,11 +55,9 @@ const checkLetter = (button) => {
     if (button.textContent = li.textContent.toLowerCase()){
       li.classList.add('show');
       match = li.textContent;
-      //return match;
     }
-    return match;
   }
-  //return match;
+  return match;
 }
 
 
