@@ -72,7 +72,7 @@ const checkWin = () => {
 // Add Event listener To Keyboard
 qwerty.addEventListener('click', (e) => {
   if ( button || button('.chosen') ) {
-    let checkLetter = ;
+    checkLetter();
     let letterFound = ;
     let missed + 1;
     scoreboard.removeChild(li);
