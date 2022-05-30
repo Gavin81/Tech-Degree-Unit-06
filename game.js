@@ -74,7 +74,7 @@ qwerty.addEventListener('click', (e) => {
   if ( button || button('.chosen') ) {
     checkLetter();
     let letterFound;
-    let missed + 1;
+    missed++;
     scoreboard.removeChild(li);
   }
 });
