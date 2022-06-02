@@ -76,6 +76,5 @@ qwerty.addEventListener('click', (event) => {
     checkLetter();
     let letterFound;
     missed++;
-    scoreboard.removeChild(li);
   }
 });
