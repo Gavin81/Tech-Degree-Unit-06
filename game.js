@@ -72,8 +72,10 @@ const checkWin = () => {
 // Add Event listener To Keyboard
 qwerty.addEventListener('click', (event) => {
   if ( event.target.tagName === "BUTTON" ) {
-    console.log(event.target.textContent);
-    checkLetter();
+    //console.log(event.target.textContent);
+    let button = document.querySelector('button');
+    button.classList.add('chosen');
+    let checkLetter('button');
     let letterFound;
     missed++;
   }
