@@ -53,7 +53,7 @@ const checkLetter = (button) => {
   let li = document.querySelectorAll('.letter');
   let match = null;
   for ( let i = 0; i < li.length; i++) {
-    if (button.textContent = li[i].textContent.toLowerCase()){
+    if (button.textContent === li[i].textContent.toLowerCase()){
       li[i].classList.add("show");
       match = li[i].textContent;
     }
