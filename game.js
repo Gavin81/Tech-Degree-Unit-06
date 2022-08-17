@@ -54,7 +54,7 @@ const checkLetter = (button) => {
   let match = null;
   for ( let i = 0; i < li.length; i++) {
     if (button.textContent = li[i].textContent.toLowerCase()){
-      li[i].classList.add('show');
+      li[i].classList.add("show");
       match = li[i].textContent;
     }
   }
