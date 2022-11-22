@@ -80,7 +80,7 @@ qwerty.addEventListener('click', (event) => {
     //missed++;
   }
 
-  if(){
+  if(checkLetter === null){
 
   }
 
