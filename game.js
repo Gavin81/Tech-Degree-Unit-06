@@ -82,6 +82,4 @@ qwerty.addEventListener('click', (event) => {
 });
 
 
-if(checkLetter === null){
-
-}
+const checkLetter = ;
