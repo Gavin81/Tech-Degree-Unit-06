@@ -74,14 +74,12 @@ qwerty.addEventListener('click', (event) => {
   if ( event.target.tagName === "BUTTON" ) {
     //console.log(event.target.textContent);
     let button = document.querySelector('event.target');
-    button.classList.add('chosen');
+    button.classList.add('.chosen');
     //const checkLetter = checkLetter('letter');
     const letterFound = checkLetter('event.target');
     //missed++;
   }
-  // if( letterFound === null ){
-  //   missed++;
-  // }
+
 });
 
 
