@@ -76,7 +76,7 @@ qwerty.addEventListener('click', (event) => {
     let button = document.querySelector('event.target');
     button.classList.add('chosen');
     //const checkLetter = checkLetter('letter');
-    const letterFound = checkLetter(event.target);
+    const letterFound = checkLetter('event.target');
     //missed++;
   }
   if( letterFound === null ){
