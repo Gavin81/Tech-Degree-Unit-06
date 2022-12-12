@@ -78,12 +78,12 @@ qwerty.addEventListener('click', (event) => {
     //missed++;
   }
 
-  if (letterFound === null){
-    const hearts  = document.querySelectorAll('.tries img');
-    tries[missed].src = 'images/lostHeart.png'
-    //missed ++;
-  }
 });
 
+if (letterFound === null){
+  const hearts  = document.querySelectorAll('.tries img');
+  tries[missed].src = 'images/lostHeart.png'
+  //missed ++;
+}
 
 //const checkLetter = ;
