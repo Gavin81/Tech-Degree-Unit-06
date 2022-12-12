@@ -79,7 +79,9 @@ qwerty.addEventListener('click', (event) => {
   }
 
   if (letterFound === null){
-    missed ++;
+    const hearts  = document.querySelectorAll('.tries img');
+    tries[missed].src = 'images/lostHeart.png'
+    //missed ++;
   }
 });
 
