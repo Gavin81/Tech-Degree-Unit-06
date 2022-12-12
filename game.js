@@ -78,6 +78,9 @@ qwerty.addEventListener('click', (event) => {
     //missed++;
   }
 
+  if (letterFound === null){
+    missed ++;
+  }
 });
 
 
