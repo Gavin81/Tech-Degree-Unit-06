@@ -15,7 +15,7 @@ startBtn.addEventListener('click', () => {
 });
 
 
-  const getRandomPhraseAsArray = (arr) => {
+const getRandomPhraseAsArray = (arr) => {
   // Produces a single random number based on the length of the array.
   const whichOne = Math.floor(Math.random() * arr.length);
 
@@ -25,8 +25,9 @@ startBtn.addEventListener('click', () => {
   // Splits the phrase into an array of letters
   return thisOne.split('');
 }
-const randomPhrase = getRandomPhraseAsArray(phrases);
 
+
+const randomPhrase = getRandomPhraseAsArray(phrases);
 
 
 const addPhraseToDisplay = (arr) => {
@@ -42,6 +43,7 @@ const addPhraseToDisplay = (arr) => {
     phrase.append(li);
   }
 }
+
 
 addPhraseToDisplay(randomPhrase);
 
@@ -82,9 +84,7 @@ qwerty.addEventListener('click', (event) => {
 
 
 if (letterFound === null){
-  const hearts  = document.querySelectorAll('.tries img');
-  tries[missed].src = 'images/lostHeart.png'
+  const hearts = document.querySelectorAll('.tries img');
+  tries[missed].src = 'images/lostHeart.png';
   //missed ++;
 }
-
-//const checkLetter = ;
