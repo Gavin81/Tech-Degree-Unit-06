@@ -86,5 +86,5 @@ qwerty.addEventListener('click', (event) => {
 if (letterFound === null){
   const hearts = document.querySelectorAll('.tries img');
   tries[missed].src = 'images/lostHeart.png';
-  //missed ++;
+  missed ++;
 }
