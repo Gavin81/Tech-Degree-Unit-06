@@ -73,7 +73,7 @@ const checkWin = () => {
 qwerty.addEventListener('click', (event) => {
   if ( event.target.tagName === "BUTTON" ) {
     //console.log(event.target.textContent);
-    let button = document.querySelector('event.target');
+    let button = event.target;
     event.target.classList.add('chosen');
     //const checkLetter = checkLetter('letter');
     const letterFound = checkLetter('event.target');
@@ -87,10 +87,3 @@ qwerty.addEventListener('click', (event) => {
     //missed++;
   }
 });
-
-
-// if (letterFound === null){
-//   const hearts = document.querySelectorAll('.tries img');
-//   tries[missed].src = 'images/lostHeart.png';
-//   missed ++;
-// }
