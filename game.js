@@ -77,13 +77,20 @@ qwerty.addEventListener('click', (event) => {
     event.target.classList.add('chosen');
     //const checkLetter = checkLetter('letter');
     const letterFound = checkLetter('event.target');
+
+    if (letterFound === null){
+      const hearts = document.querySelectorAll('.tries img');
+      tries[missed].src = 'images/lostHeart.png';
+      missed ++;
+    }
+
     //missed++;
   }
 });
 
 
-if (letterFound === null){
-  const hearts = document.querySelectorAll('.tries img');
-  tries[missed].src = 'images/lostHeart.png';
-  missed ++;
-}
+// if (letterFound === null){
+//   const hearts = document.querySelectorAll('.tries img');
+//   tries[missed].src = 'images/lostHeart.png';
+//   missed ++;
+// }
