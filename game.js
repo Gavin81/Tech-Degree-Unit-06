@@ -83,7 +83,5 @@ qwerty.addEventListener('click', (event) => {
       tries[missed].src = 'images/lostHeart.png';
       missed ++;
     }
-
-    //missed++;
   }
 });
