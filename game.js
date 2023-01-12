@@ -76,7 +76,7 @@ qwerty.addEventListener('click', (event) => {
     let button = event.target;
     event.target.classList.add('chosen');
     //const checkLetter = checkLetter('letter');
-    const letterFound = checkLetter('event.target');
+    const letterFound = checkLetter(button);
 
     if (letterFound === null){
       const hearts = document.querySelectorAll('.tries img');
