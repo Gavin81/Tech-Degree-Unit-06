@@ -75,12 +75,12 @@ qwerty.addEventListener('click', (event) => {
     //console.log(event.target.textContent);
     let button = event.target;
     event.target.classList.add('chosen');
-    
+
     const letterFound = checkLetter(button);
 
     if (letterFound === null){
       const hearts = document.querySelectorAll('.tries img');
-      tries[missed].src = 'images/lostHeart.png';
+      hearts[missed].src = 'images/lostHeart.png';
       missed ++;
     }
   }
