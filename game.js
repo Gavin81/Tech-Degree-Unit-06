@@ -64,7 +64,13 @@ const checkLetter = (button) => {
 
 
 const checkWin = () => {
+  const liLetter = li.className('letter');
+  const liShow = li.className('show');
+  if ( liLetter.length === liShow.length ){
+    const youWin = document.getElementById('overlay').style.display = 'You Win';
+  } else {
 
+  }
 }
 
 
