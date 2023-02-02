@@ -68,10 +68,11 @@ const checkWin = () => {
   const liShow = document.querySelectorAll('.show');
   const result = document.querySelector('.title');
   if ( liLetter.length === liShow.length ){
-    const youWin = document.getElementById('overlay').style.display = 'flex';
+    document.getElementById('overlay').style.display = 'flex';
+    overlay.className.add('win');
     result.textContent = "You've Won";
   } else {
-    result.textContent = "Game Over, You've Lost";
+    result.textContent = "Oh Dear, Game Over";
   }
 }
 
