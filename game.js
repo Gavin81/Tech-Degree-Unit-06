@@ -64,12 +64,14 @@ const checkLetter = (button) => {
 
 
 const checkWin = () => {
-  const liLetter = li.className('letter');
-  const liShow = li.className('show');
+  const liLetter = document.querySelectorAll('.letter');
+  const liShow = document.querySelectorAll('.show');
+  const result = document.querySelector('.title');
   if ( liLetter.length === liShow.length ){
-    const youWin = document.getElementById('overlay').style.display = 'You Win';
+    const youWin = document.getElementById('overlay').style.display = 'flex';
+    result.textContent = "You've Won";
   } else {
-
+    result.textContent = "Game Over, You've Lost";
   }
 }
 
