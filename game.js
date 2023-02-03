@@ -68,11 +68,15 @@ const checkWin = () => {
   const liShow = document.querySelectorAll('.show');
   const result = document.querySelector('.title');
   if ( liLetter.length === liShow.length ){
-    document.getElementById('overlay').style.display = 'flex';
     overlay.classList.add('win');
     result.textContent = "You've Won";
-  } else {
+    document.getElementById('overlay').style.display = 'flex';
+    // overlay.style.display = 'flex';
+  } else if ( missed > 4 ) {
+    overlay.classList.add('lose');
     result.textContent = "Oh Dear, Game Over";
+    // overlay.style.display = 'flex';
+    document.querySelector('#overlay').style.display = 'flex';
   }
 }
 
