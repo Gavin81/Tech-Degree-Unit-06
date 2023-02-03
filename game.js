@@ -69,7 +69,7 @@ const checkWin = () => {
   const result = document.querySelector('.title');
   if ( liLetter.length === liShow.length ){
     document.getElementById('overlay').style.display = 'flex';
-    overlay.className.add('win');
+    overlay.classList.add('win');
     result.textContent = "You've Won";
   } else {
     result.textContent = "Oh Dear, Game Over";
