@@ -70,13 +70,13 @@ const checkWin = () => {
   if ( liLetter.length === liShow.length ){
     overlay.classList.add('win');
     result.textContent = "You've Won";
-    document.getElementById('overlay').style.display = 'flex';
-    // overlay.style.display = 'flex';
-  } else if ( missed > 4 ) {
+    overlay.style.display = 'flex';
+    // document.getElementById('overlay').style.display = 'flex';
+  } else if ( missed => 5 ) {
     overlay.classList.add('lose');
     result.textContent = "Oh Dear, Game Over";
-    // overlay.style.display = 'flex';
-    document.querySelector('#overlay').style.display = 'flex';
+    overlay.style.display = 'flex';
+    // document.querySelector('#overlay').style.display = 'flex';
   }
 }
 
@@ -96,5 +96,6 @@ qwerty.addEventListener('click', (event) => {
       hearts[missed].src = 'images/lostHeart.png';
       missed ++;
     }
+    checkWin();
   }
 });
