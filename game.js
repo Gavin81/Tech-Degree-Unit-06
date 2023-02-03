@@ -72,7 +72,7 @@ const checkWin = () => {
     result.textContent = "You've Won";
     overlay.style.display = 'flex';
     // document.getElementById('overlay').style.display = 'flex';
-  } else if ( missed => 5 ) {
+  } else if ( missed > 4 ) {
     overlay.classList.add('lose');
     result.textContent = "Oh Dear, Game Over";
     overlay.style.display = 'flex';
