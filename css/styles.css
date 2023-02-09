@@ -14,7 +14,7 @@
   --font-size-large: 60px;
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
-}
+  }
 
 /* main */
 
@@ -93,8 +93,35 @@ button {
 }
 
 .show {
+  width: 65px;
+  height: 65px;
   color: #000;
   background-color: #76CE82;
+  transition-property: width 100%;
+  transition-duration: 1s;
+
+  /* animation: 10s cubic-bezier(10, 10) circle-in-center;
+  transition-timing-function: 10s cubic-bezier( 10, 10, 10, 10); */
+
+  /* --transition_easing:cubic-bezier(.25, 1, .30, 1); */
+  /*--transition_duration: 10s; */
+}
+
+
+#phrase {
+  /* --transition_easing:cubic-bezier(.25, 1, .30, 1);
+  --transition_duration: 10s;
+  circle-in-center {
+    from {
+      clip-path: circle(0%);
+    }
+    to {
+      clip-path: circle(50%);
+    }
+  }
+  [transition-style ="in:circle:center"] {
+    animation: 10s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+  } */
 }
 
 /* Keyboard */
