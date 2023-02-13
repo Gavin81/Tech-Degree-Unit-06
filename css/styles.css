@@ -97,7 +97,6 @@ button {
   height: 65px;
   color: #000;
   background-color: #76CE82;
-  transition-property: width 100%;
   transition-duration: 1s;
 
   /* animation: 10s cubic-bezier(10, 10) circle-in-center;
