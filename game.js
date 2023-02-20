@@ -4,6 +4,8 @@ const phrases = ['Reincarnation', 'Movies', 'Slapstick', 'Respect', 'Money', 'Ti
 let missed = 0;
 const startBtn = document.querySelector('.btn__reset');
 const overlay = document.querySelector('#overlay');
+const reStart = document.createElement('button');
+
 
 // Generate a random number and then use that random number as an index to grab
 // one of the phrases from the array.
@@ -98,3 +100,6 @@ qwerty.addEventListener('click', (event) => {
     checkWin();
   }
 });
+
+
+// EXTRA CREDIT PART
