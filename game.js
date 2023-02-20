@@ -105,3 +105,12 @@ qwerty.addEventListener('click', (event) => {
 
 
 // EXTRA CREDIT PART
+button.addEventListener('click', (event) => {
+  if (event.target.textContent === 'Re-start Game') {
+      getRandomPhraseAsArray = (arr) => {
+      whichOne = Math.floor(Math.random() * arr.length );
+      thisOne = arr[whichOne];
+      return thisOne.split('');
+    }
+  }
+});
