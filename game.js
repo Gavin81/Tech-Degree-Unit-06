@@ -106,16 +106,16 @@ qwerty.addEventListener('click', (event) => {
 
 // EXTRA CREDIT PART
 button.addEventListener('click', (event) => {
-const qwerty = document.querySelector('#qwerty');
-const phrase = document.querySelector('#phrase ul');
-const phrases = ['Reincarnation', 'Movies', 'Slapstick', 'Respect', 'Money', 'Time and effort'];
-let missed = 0;
-const startBtn = document.querySelector('.btn__reset');
-const overlay = document.querySelector('#overlay');
-const reStart = document.createElement('button');
+// const qwerty = document.querySelector('#qwerty');
+// const phrase = document.querySelector('#phrase ul');
+// const phrases = ['Reincarnation', 'Movies', 'Slapstick', 'Respect', 'Money', 'Time and effort'];
+// let missed = 0;
+// const startBtn = document.querySelector('.btn__reset');
+// const overlay = document.querySelector('#overlay');
+// const reStart = document.createElement('button');
   // If 'restart game' button is pressed, start new game.
   // Get random phrase.
-  if (event.target.textContent === 'Re-start Game') {
+  if (event.target.textContent === "Re-start Game") {
       getRandomPhraseAsArray = (arr) => {
       whichOne = Math.floor(Math.random() * arr.length );
       thisOne = arr[whichOne];
