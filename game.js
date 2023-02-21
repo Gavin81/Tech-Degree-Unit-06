@@ -112,7 +112,7 @@ startBtn.addEventListener('click', (event) => {
   missed = 0;
 
   // Empty the phrase ul element
-  phrase.ul = '';
+  phrase.ul = ' ';
 
   // Call the getRandomPhraseAsArray function to get a new phrase
   getRandomPhraseAsArray();
@@ -192,7 +192,6 @@ startBtn.addEventListener('click', (event) => {
   //       thisOne = arr[whichOne];
   //       return thisOne.split('');
   //     }
-
   // }
 
 });
