@@ -112,26 +112,26 @@ startBtn.addEventListener('click', (event) => {
   missed = 0;
 
   // Empty the phrase ul element
-  phrase.ul = ' ';
+  phrase.innerHTML = '';
 
   // Call the getRandomPhraseAsArray function to get a new phrase
-  getRandomPhraseAsArray();
+  const randomPhrase = getRandomPhraseAsArray(phrases);
 
   // Add this new random phrase to the display
   addPhraseToDisplay(randomPhrase);
 
   // Loop over the keys, remove the chosen class, enable them again
-  const checkLetter = (button) => {
-      let li = document.querySelectorAll('.letter');
-      let match = null;
-      for ( let i = 0; i < li.length; i++) {
-      if (button.textContent === li[i].textContent.toLowerCase()){
-          li[i].classList.add("show");
-          match = li[i].textContent;
-      }
-    }
-    return match;
- }
+ //  const checkLetter = (button) => {
+ //      let li = document.querySelectorAll('.letter');
+ //      let match = null;
+ //      for ( let i = 0; i < li.length; i++) {
+ //      if (button.textContent === li[i].textContent.toLowerCase()){
+ //          li[i].classList.add("show");
+ //          match = li[i].textContent;
+ //      }
+ //    }
+ //    return match;
+ // }
 
 
   // Remove the chosen class
@@ -139,25 +139,6 @@ startBtn.addEventListener('click', (event) => {
     if ( event.target.tagName === "BUTTON" ) {
       let button = event.target;
       event.target.classList.add('');
-
-      const letterFound = checkLetter(button);
-
-      if (letterFound === null){
-        const hearts = document.querySelectorAll('.tries img');
-        hearts[missed].src = 'images/lostHeart.png';
-        missed ++;
-      }
-      checkWin();
-    }
-  });
-
-
-
-  // Loop over the images
-  qwerty.addEventListener('click', (event) => {
-    if ( event.target.tagName === "BUTTON" ) {
-      let button = event.target;
-      event.target.classList.add('chosen');
 
       const letterFound = checkLetter(button);
 
@@ -171,27 +152,46 @@ startBtn.addEventListener('click', (event) => {
   });
 
 
-  // Set the missed var back to 0
-  // Empty the #phrase ul element
-  // call the getRandomPhraseAsArray function to get a new phrase
-    // Add this new random phrase to the display
-    // by calling your addToDisplay function
-  // Loop over the keys
-    // remove the chosen class
-    // enable them again
-  // Loop over the images
-    // Set the src of each of the images back to liveHeart.png
+
+ //  // Loop over the images
+ //  qwerty.addEventListener('click', (event) => {
+ //    if ( event.target.tagName === "BUTTON" ) {
+ //      let button = event.target;
+ //      event.target.classList.add('chosen');
+
+ //      const letterFound = checkLetter(button);
+
+ //      if (letterFound === null){
+ //        const hearts = document.querySelectorAll('.tries img');
+ //        hearts[missed].src = 'images/liveHeart.png';
+ //        missed ++;
+ //      }
+ //      checkWin();
+ //    }
+ //  });
+
+
+ //  // Set the missed var back to 0
+ //  // Empty the #phrase ul element
+ //  // call the getRandomPhraseAsArray function to get a new phrase
+ //    // Add this new random phrase to the display
+ //    // by calling your addToDisplay function
+ //  // Loop over the keys
+ //    // remove the chosen class
+ //    // enable them again
+ //  // Loop over the images
+ //    // Set the src of each of the images back to liveHeart.png
     
 
 
 
-  // Get random phrase.
-  // if (event.target.textContent === "Re-start Game") {
-  //     getRandomPhraseAsArray = (arr) => {
-  //       whichOne = Math.floor(Math.random() * arr.length );
-  //       thisOne = arr[whichOne];
-  //       return thisOne.split('');
-  //     }
-  // }
+ //  // Get random phrase.
+ //  // if (event.target.textContent === "Re-start Game") {
+ //  //     getRandomPhraseAsArray = (arr) => {
+ //  //       whichOne = Math.floor(Math.random() * arr.length );
+ //  //       thisOne = arr[whichOne];
+ //  //       return thisOne.split('');
+ //  //     }
+ //  // }
 
 });
