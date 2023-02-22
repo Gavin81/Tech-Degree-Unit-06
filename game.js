@@ -106,7 +106,7 @@ qwerty.addEventListener('click', (event) => {
 
 
 // EXTRA CREDIT PART
-startBtn.addEventListener('click', (event) => {
+function resetGame() {
 
   // Set the missed var back to 0
   missed = 0;
@@ -126,17 +126,19 @@ startBtn.addEventListener('click', (event) => {
   // Remove the chosen class
   qwerty.addEventListener('click', (event) => {
     if ( event.target.tagName === "BUTTON" ) {
-      let button = event.target;
+        classList.remove('chosen');
+
+      //let button = event.target;
       //event.target.classList.add('chosen');
 
-      const letterFound = checkLetter(button);
+      //const letterFound = checkLetter(button);
 
-      if (letterFound === null){
-        const hearts = document.querySelectorAll('.tries img');
-        hearts[missed].src = 'images/liveHeart.png';
-        missed ++;
-      }
-      checkWin();
+      // if (letterFound === null){
+      //   const hearts = document.querySelectorAll('.tries img');
+      //   hearts[missed].src = 'images/liveHeart.png';
+      //   missed ++;
+      // }
+      // checkWin();
     }
   });
 
