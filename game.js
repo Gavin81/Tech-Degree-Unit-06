@@ -120,25 +120,14 @@ startBtn.addEventListener('click', (event) => {
   // Add this new random phrase to the display
   addPhraseToDisplay(randomPhrase);
 
+
+
   // Loop over the keys, remove the chosen class, enable them again
- //  const checkLetter = (button) => {
- //      let li = document.querySelectorAll('.letter');
- //      let match = null;
- //      for ( let i = 0; i < li.length; i++) {
- //      if (button.textContent === li[i].textContent.toLowerCase()){
- //          li[i].classList.add("show");
- //          match = li[i].textContent;
- //      }
- //    }
- //    return match;
- // }
-
-
   // Remove the chosen class
   qwerty.addEventListener('click', (event) => {
     if ( event.target.tagName === "BUTTON" ) {
       let button = event.target;
-      event.target.classList.add('');
+      //event.target.classList.add('chosen');
 
       const letterFound = checkLetter(button);
 
@@ -150,25 +139,6 @@ startBtn.addEventListener('click', (event) => {
       checkWin();
     }
   });
-
-
-
- //  // Loop over the images
- //  qwerty.addEventListener('click', (event) => {
- //    if ( event.target.tagName === "BUTTON" ) {
- //      let button = event.target;
- //      event.target.classList.add('chosen');
-
- //      const letterFound = checkLetter(button);
-
- //      if (letterFound === null){
- //        const hearts = document.querySelectorAll('.tries img');
- //        hearts[missed].src = 'images/liveHeart.png';
- //        missed ++;
- //      }
- //      checkWin();
- //    }
- //  });
 
 
  //  // Set the missed var back to 0
