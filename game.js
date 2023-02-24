@@ -108,9 +108,6 @@ qwerty.addEventListener('click', (event) => {
 
 // EXTRA CREDIT PART
 
-
-  // Loop over the keys, remove the chosen class, enable them again
-  // Remove the chosen class
 overlay.addEventListener('click', (event) => {
 
   if ( event.target.textContent === "Re-start Game" ) {
@@ -128,15 +125,16 @@ overlay.addEventListener('click', (event) => {
     addPhraseToDisplay(randomPhrase);
 
 
-    // Reset the hearts via a for loop and remove chosen class
+    // Reset the hearts images via a for loop
     for ( let i = 0; i < hearts.length; i++ ){
       hearts[i].src = 'images/liveHeart.png';
     }
 
-
-    } else {
-    
+    // Loop through the qwerty elements and remove the chosen class
+    for ( let i = 0; i < qwerty.length; i++ ) {
+      qwerty[i].remove('chosen');
     }
+  }   
 });
 
 
