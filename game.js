@@ -4,7 +4,8 @@ const phrases = ['Reincarnation', 'Movies', 'Slapstick', 'Respect', 'Money', 'Ti
 let missed = 0;
 const startBtn = document.querySelector('.btn__reset');
 const overlay = document.querySelector('#overlay');
-const reStart = document.createElement('button');
+const hearts = document.querySelectorAll('.tries img');
+//const reStart = document.createElement('button');
 
 
 // Generate a random number and then use that random number as an index to grab
@@ -106,64 +107,65 @@ qwerty.addEventListener('click', (event) => {
 
 
 // EXTRA CREDIT PART
-function resetGame() {
+// function resetGame() {
 
-  // Set the missed var back to 0
-  missed = 0;
+  // // Set the missed var back to 0
+  // missed = 0;
 
-  // Empty the phrase ul element
-  phrase.innerHTML = '';
+  // // Empty the phrase ul element
+  // phrase.innerHTML = '';
 
-  // Call the getRandomPhraseAsArray function to get a new phrase
-  const randomPhrase = getRandomPhraseAsArray(phrases);
+  // // Call the getRandomPhraseAsArray function to get a new phrase
+  // const randomPhrase = getRandomPhraseAsArray(phrases);
 
-  // Add this new random phrase to the display
-  addPhraseToDisplay(randomPhrase);
+  // // Add this new random phrase to the display
+  // addPhraseToDisplay(randomPhrase);
 
 
 
   // Loop over the keys, remove the chosen class, enable them again
   // Remove the chosen class
-  qwerty.addEventListener('click', (event) => {
-    if ( event.target.tagName === "BUTTON" ) {
-        classList.remove('chosen');
+  overlay.addEventListener('click', (event) => {
 
-      //let button = event.target;
-      //event.target.classList.add('chosen');
+      if ( event.target.textContent === "Re-start Game" ) {
 
-      //const letterFound = checkLetter(button);
+        // Set the missed var back to 0
+        missed = 0;
 
-      // if (letterFound === null){
+        // Empty the phrase ul element
+        phrase.innerHTML = '';
+
+        // Call the getRandomPhraseAsArray function to get a new phrase
+        const randomPhrase = getRandomPhraseAsArray(phrases);
+
+        // Add this new random phrase to the display
+        addPhraseToDisplay(randomPhrase);
+
+          for ( i = 0; i <= hearts.length; i++ ){
+            hearts[i].src = 'images/liveHeart.png';
+            classList.remove('chosen');
+          }
+
+
+
       //   const hearts = document.querySelectorAll('.tries img');
       //   hearts[missed].src = 'images/liveHeart.png';
       //   missed ++;
       // }
-      // checkWin();
+
+    } else {
+      
     }
   });
 
 
- //  // Set the missed var back to 0
- //  // Empty the #phrase ul element
- //  // call the getRandomPhraseAsArray function to get a new phrase
- //    // Add this new random phrase to the display
- //    // by calling your addToDisplay function
- //  // Loop over the keys
- //    // remove the chosen class
- //    // enable them again
- //  // Loop over the images
- //    // Set the src of each of the images back to liveHeart.png
-    
-
-
-
- //  // Get random phrase.
- //  // if (event.target.textContent === "Re-start Game") {
- //  //     getRandomPhraseAsArray = (arr) => {
- //  //       whichOne = Math.floor(Math.random() * arr.length );
- //  //       thisOne = arr[whichOne];
- //  //       return thisOne.split('');
- //  //     }
- //  // }
-
-});
+   // Set the missed var back to 0
+   // Empty the #phrase ul element
+   // call the getRandomPhraseAsArray function to get a new phrase
+     // Add this new random phrase to the display
+     // by calling your addToDisplay function
+   // Loop over the keys
+     // remove the chosen class
+     // enable them again
+   // Loop over the images
+    // Set the src of each of the images back to liveHeart.png
