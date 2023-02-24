@@ -143,9 +143,8 @@ qwerty.addEventListener('click', (event) => {
 
 
         // Reset the hearts via a for loop and remove chosen class
-          for ( i = 0; i <= hearts.length; i++ ){
+          for ( let i = 0; i < hearts.length; i++ ){
             hearts[i].src = 'images/liveHeart.png';
-            classList.remove('chosen');
           }
 
 
