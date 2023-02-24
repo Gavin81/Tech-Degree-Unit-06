@@ -141,6 +141,8 @@ qwerty.addEventListener('click', (event) => {
         // Add this new random phrase to the display
         addPhraseToDisplay(randomPhrase);
 
+
+        // Reset the hearts via a for loop and remove chosen class
           for ( i = 0; i <= hearts.length; i++ ){
             hearts[i].src = 'images/liveHeart.png';
             classList.remove('chosen');
