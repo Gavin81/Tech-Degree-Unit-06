@@ -107,57 +107,37 @@ qwerty.addEventListener('click', (event) => {
 
 
 // EXTRA CREDIT PART
-// function resetGame() {
-
-  // // Set the missed var back to 0
-  // missed = 0;
-
-  // // Empty the phrase ul element
-  // phrase.innerHTML = '';
-
-  // // Call the getRandomPhraseAsArray function to get a new phrase
-  // const randomPhrase = getRandomPhraseAsArray(phrases);
-
-  // // Add this new random phrase to the display
-  // addPhraseToDisplay(randomPhrase);
-
 
 
   // Loop over the keys, remove the chosen class, enable them again
   // Remove the chosen class
-  overlay.addEventListener('click', (event) => {
+overlay.addEventListener('click', (event) => {
 
-      if ( event.target.textContent === "Re-start Game" ) {
+  if ( event.target.textContent === "Re-start Game" ) {
 
-        // Set the missed var back to 0
-        missed = 0;
+    // Set the missed var back to 0
+    missed = 0;
 
-        // Empty the phrase ul element
-        phrase.innerHTML = '';
+    // Empty the phrase ul element
+    phrase.innerHTML = '';
 
-        // Call the getRandomPhraseAsArray function to get a new phrase
-        const randomPhrase = getRandomPhraseAsArray(phrases);
+    // Call the getRandomPhraseAsArray function to get a new phrase
+    const randomPhrase = getRandomPhraseAsArray(phrases);
 
-        // Add this new random phrase to the display
-        addPhraseToDisplay(randomPhrase);
-
-
-        // Reset the hearts via a for loop and remove chosen class
-          for ( let i = 0; i < hearts.length; i++ ){
-            hearts[i].src = 'images/liveHeart.png';
-          }
+    // Add this new random phrase to the display
+    addPhraseToDisplay(randomPhrase);
 
 
+    // Reset the hearts via a for loop and remove chosen class
+    for ( let i = 0; i < hearts.length; i++ ){
+      hearts[i].src = 'images/liveHeart.png';
+    }
 
-      //   const hearts = document.querySelectorAll('.tries img');
-      //   hearts[missed].src = 'images/liveHeart.png';
-      //   missed ++;
-      // }
 
     } else {
-      
+    
     }
-  });
+});
 
 
    // Set the missed var back to 0
