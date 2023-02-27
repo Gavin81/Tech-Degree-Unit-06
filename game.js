@@ -130,7 +130,7 @@ overlay.addEventListener('click', (event) => {
       hearts[i].src = 'images/liveHeart.png';
     }
 
-    // Loop through the qwerty elements and remove the chosen class
+    // Loop through the qwerty elements/buttons and remove the chosen class
     const buttons = document.querySelectorAll('button');
     for ( let i = 0; i < buttons.length; i++ ) {
       buttons[i].classList.remove('chosen');
