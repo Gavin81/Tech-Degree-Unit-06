@@ -131,8 +131,9 @@ overlay.addEventListener('click', (event) => {
     }
 
     // Loop through the qwerty elements and remove the chosen class
-    for ( let i = 0; i < qwerty.length; i++ ) {
-      qwerty[i].remove('chosen');
+    const buttons = document.querySelectorAll('button');
+    for ( let i = 0; i < buttons.length; i++ ) {
+      buttons[i].classList.remove('chosen');
     }
   }   
 });
