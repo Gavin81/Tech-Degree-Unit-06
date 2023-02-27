@@ -5,13 +5,12 @@ let missed = 0;
 const startBtn = document.querySelector('.btn__reset');
 const overlay = document.querySelector('#overlay');
 const hearts = document.querySelectorAll('.tries img');
-//const reStart = document.createElement('button');
 
 
 // Generate a random number and then use that random number as an index to grab
 // one of the phrases from the array.
 // Using the random number to return an item from the phrases array instead of just
-// the random number.
+
 
 startBtn.addEventListener('click', () => {
   document.getElementById('overlay').style.display = "none";
