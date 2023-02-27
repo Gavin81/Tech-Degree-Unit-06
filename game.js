@@ -69,7 +69,6 @@ const checkWin = () => {
   const liLetter = document.querySelectorAll('.letter');
   const liShow = document.querySelectorAll('.show');
   const result = document.querySelector('.title');
-  // const reStart = document.createElement('button');
   if ( liLetter.length === liShow.length ){
     overlay.classList.add('win');
     result.textContent = "You've Won";
