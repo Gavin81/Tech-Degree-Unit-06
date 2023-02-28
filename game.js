@@ -17,7 +17,7 @@ startBtn.addEventListener('click', () => {
 });
 
 
-const getRandomPhraseAsArray = (arr) => {
+  const getRandomPhraseAsArray = (arr) => {
   // Produces a single random number based on the length of the array.
   const whichOne = Math.floor(Math.random() * arr.length);
 
