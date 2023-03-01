@@ -90,13 +90,13 @@ qwerty.addEventListener('click', (event) => {
   if ( event.target.tagName === "BUTTON" ) {
     let button = event.target;
     event.target.classList.add('chosen');
-
     const letterFound = checkLetter(button);
 
     if (letterFound === null){
       const hearts = document.querySelectorAll('.tries img');
       hearts[missed].src = 'images/lostHeart.png';
       missed ++;
+      button.disabled = true;
     }
     checkWin();
   }
@@ -132,8 +132,10 @@ overlay.addEventListener('click', (event) => {
     const buttons = document.querySelectorAll('button');
     for ( let i = 0; i < buttons.length; i++ ) {
       buttons[i].classList.remove('chosen');
+      buttons[i].disabled = false;
     }
-  }   
+
+  }
 });
 
 
