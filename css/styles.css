@@ -34,14 +34,33 @@ li, ol, ul {
   display: inline-block;
 }
 #overlay .title {
-  border: 1px solid blue;
-}
-h2 {
+  padding: 0;
   margin: 0;
+  font-family: 'Opn Sans', sans-serif;
+  font-size: 25px;
+}
+#banner .header {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+}
+#phrase {
+  border: 1px solid red;
+  margin: 0;
+}
+#phrase ul {
+  border: 1px solid blue;
+  padding: 0;
+}
+
+/* h2 {
+  border: 1px solid red;
+  margin: 0;
+  font-size: 20px;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-size: var(--font-size-large);
-}
+} */
 
 
 button {
