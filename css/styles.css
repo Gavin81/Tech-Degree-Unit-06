@@ -33,14 +33,16 @@ li, ol, ul {
   padding: 0;
   display: inline-block;
 }
-
+#overlay .title {
+  border: 1px solid blue;
+}
 h2 {
   margin: 0;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-size: var(--font-size-large);
-  margin: 0;
 }
+
 
 button {
   margin: 6px;
@@ -148,8 +150,9 @@ button {
   cursor: pointer;
 }
 
-/* Overlay */
 
+
+/* Overlay */
 #overlay {
   display: flex;
   flex-direction: column;
@@ -189,8 +192,4 @@ button {
 
 .lose a {
   color: var(--color-lose);
-}
-
-.title {
-  border: 1px solid red;
 }
