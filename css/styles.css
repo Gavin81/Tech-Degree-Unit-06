@@ -36,20 +36,21 @@ li, ol, ul {
 #overlay .title {
   padding: 0;
   margin: 0;
-  font-family: 'Opn Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 25px;
 }
 #banner .header {
+  border: 1px solid green;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 27px;
 }
 #phrase {
-  border: 1px solid red;
   margin: 0;
+  height: 50px;
+  width: 50px;
 }
 #phrase ul {
-  border: 1px solid blue;
   padding: 0;
 }
 
@@ -186,6 +187,7 @@ button {
 }
 
 .title {
+  border: 1px solid black;
   color: #FFF;
 }
 
