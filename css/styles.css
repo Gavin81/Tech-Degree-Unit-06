@@ -4,7 +4,7 @@
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
+  /* --color-win: #78CF82; */
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
@@ -23,6 +23,7 @@
 }
 
 body {
+  margin: 0;
   justify-content: space-evenly;
   flex-direction: column;
   display: flex;
@@ -33,26 +34,42 @@ li, ol, ul {
   padding: 0;
   display: inline-block;
 }
+
 #overlay .title {
-  padding: 0;
+  padding: 10px 7px;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  font-size: 35px;
+}
+#banner {
+  margin: 0;
+  padding: 0;
 }
 #banner .header {
-  border: 1px solid green;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 27px;
 }
 #phrase {
   margin: 0;
-  height: 50px;
-  width: 50px;
 }
 #phrase ul {
+  margin: 0;
   padding: 0;
 }
+
+#qwerty {
+  border: 1px solid blue;
+  display: block;
+  margin: 0 auto;
+  width: 98%;
+}
+.keyrow {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* h2 {
   border: 1px solid red;
@@ -65,8 +82,10 @@ li, ol, ul {
 
 
 button {
+  border: 1px solid black;
+  width: ;
   margin: 6px;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   padding: .5rem 1rem;
   color: var(--color-keys);
   font-size: var(--font-size-medium);
@@ -111,7 +130,8 @@ button {
 }
 
 .space {
-  width: 15px;
+  /* border: 1px solid red;
+  width: 15px; */
 }
 
 .show {
@@ -147,10 +167,7 @@ button {
 
 /* Keyboard */
 
-.keyrow {
-  display: flex;
-  justify-content: center;
-}
+
 
 .chosen {
   background: var(--color-neutral);
@@ -160,10 +177,10 @@ button {
 }
 
 .btn__reset {
-  padding: 8px;
-  margin: 50px auto;
-  background: #FFFFFF;
-  border-radius: 5px;
+  padding: 10px 40px;
+  margin: 5px auto;
+  background: #7c9cb8;
+  border-radius: 6px;
   font-size: var(--font-size-medium);
 }
 .btn__reset:hover {
@@ -174,6 +191,7 @@ button {
 
 /* Overlay */
 #overlay {
+  width: 74%;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -186,10 +204,9 @@ button {
   border-radius: 5px;
 }
 
-.title {
-  border: 1px solid black;
+/* .title {
   color: #FFF;
-}
+} */
 
 .start {
   background-color: var(--color-start);
