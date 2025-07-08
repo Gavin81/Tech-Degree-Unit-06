@@ -69,6 +69,10 @@ li, ol, ul {
   display: flex;
   justify-content: center;
 }
+#qwerty .keyrow button {
+  border: 1px solid green;
+  width: ;
+}
 
 
 /* h2 {
@@ -82,7 +86,6 @@ li, ol, ul {
 
 
 button {
-  border: 1px solid black;
   width: ;
   margin: 6px;
   /* border: 1px solid transparent; */
