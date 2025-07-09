@@ -71,7 +71,6 @@ li, ol, ul {
 }
 #qwerty .keyrow button {
   border: 1px solid green;
-  width: ;
 }
 
 
@@ -86,7 +85,6 @@ li, ol, ul {
 
 
 button {
-  width: ;
   margin: 6px;
   /* border: 1px solid transparent; */
   padding: .5rem 1rem;
@@ -132,10 +130,6 @@ button {
   border-radius: 5px;
 }
 
-.space {
-  /* border: 1px solid red;
-  width: 15px; */
-}
 
 .show {
   width: 65px;
@@ -207,9 +201,7 @@ button {
   border-radius: 5px;
 }
 
-/* .title {
-  color: #FFF;
-} */
+
 
 .start {
   background-color: var(--color-start);

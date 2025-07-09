@@ -4,7 +4,8 @@
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
+  /* --color-win: #78CF82; */
+  --color-win: #40E0D0;
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
@@ -13,7 +14,7 @@
   --color-keys-light: #E5E5E5;
   --font-size-xlarge: 60px;
   --font-size-large: 30px;
-  --font-size-medium: 20px;
+  --font-size-medium: 30px;
   --font-size-small: 14px;
   --transition: all .2s ease-in-out;
 }
@@ -34,7 +35,7 @@ li, ol, ul {
 
 
 h2 {
-  margin: 0;
+  margin: 100px 0 0 0;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-size: var(--font-size-medium);
@@ -85,7 +86,7 @@ button {
   width: 100%;
 }
 
-.letter {  
+.letter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,8 +110,9 @@ button {
   background-color: #76CE82;
 }
 
-/* Keyboard */
 
+
+/* Keyboard */
 .keyrow {
   display: flex;
   justify-content: center;
@@ -123,15 +125,21 @@ button {
 }
 
 .btn__reset {
-  padding: 8px;
-  margin: 50px auto;
-  background: #FFFFFF;
+  padding: 10px 35px;
+  margin: 20px auto;
+  background: #7babd3;
   border-radius: 5px;
-  font-size: var(--font-size-medium);
+  font-size: 23px;
+  /* font-size: var(--font-size-medium); */
+}
+.btn__reset:hover {
+  cursor: pointer;
+  border: 1px solid turquoise;
 }
 
-/* Overlay */
 
+
+/* Overlay */
 #overlay {
   display: flex;
   flex-direction: column;
@@ -176,6 +184,8 @@ button {
   width: 25px;
   height: 25px;
 }
+
+
 
 @media (min-width: 768px) {
 
